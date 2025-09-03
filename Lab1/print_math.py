@@ -10,4 +10,4 @@ import math
 print("Reynolds number is", (9.0 * 0.875) / 0.0015); #This prints the Reynolds number
 print("Wavelength is", 2 * 0.029 * math.sin((35*math.pi)/180), "nm"); #This prints the wavelength
 print("Production rate is", 100 / ((1 + 0.8 * 2 * 10) ** (1 / 0.8)), "barrels/day"); #This prints the barrel per day decay rate
-print("Change in velocity is", 2029 * math.log(11000 / 8300), "m/s"); #This prints the change in velocity
+print("Change of velocity is", 2029 * math.log(11000 / 8300), "m/s"); #This prints the change in velocity
