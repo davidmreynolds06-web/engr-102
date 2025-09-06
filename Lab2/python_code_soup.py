@@ -6,7 +6,6 @@
 # Section: ENGR 102
 # Assignment: Lab Topic 2 (Independent)
 # Date: 05 09 2025
-import math
 x = 1
 y = 10
 z = 0
