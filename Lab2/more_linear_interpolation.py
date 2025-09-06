@@ -19,7 +19,7 @@ t1 = 30
 x1 = ((x2-x0)/(t2-t0))*(t1-t0)+x0
 y1 = ((y2-y0)/(t2-t0))*(t1-t0)+y0
 z1 = ((z2-z0)/(t2-t0))*(t1-t0)+z0
-print("At time 30.0 seconds :")
+print("At time 30.0 seconds:")
 print("x1 =", x1, "m")
 print("y1 =", y1, "m")
 print("z1 =", z1, "m")
