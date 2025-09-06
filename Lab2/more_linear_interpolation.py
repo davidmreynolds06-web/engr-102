@@ -5,7 +5,8 @@
 # Name: David Reynolds
 # Section: ENGR 102
 # Assignment: Lab Topic 2 (Independent)
-# Date: 05 09 2025import math
+# Date: 05 09 2025
+import math
 t0 = 12
 x0 = 8
 y0 = 6
