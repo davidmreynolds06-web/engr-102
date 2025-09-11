@@ -37,11 +37,11 @@ p_rate = float(i_rate / ((1 + constant * d_rate * time) ** (1 / constant)))
 print(f"Production rate is {p_rate:.2f} barrels/day") #This prints the barrel per day decay rate
 print()
 print("This program calculates the change of velocity given initial mass, final mass, and exhaust velocity")
-print("Please enter the initial mass (kg): 11000")
+print("Please enter the initial mass (kg):")
 i_mass = int(input()) #This takes in the initial mass
-print("Please enter the final mass (kg): 8300")
+print("Please enter the final mass (kg):")
 f_mass = int(input()) #This takes in the final mass
-print("Please enter the exhaust velocity (m/s): 2029")
+print("Please enter the exhaust velocity (m/s):")
 e_velo = int(input()) #This takes in the exhaust velocity
 c_velo = float(e_velo * math.log(i_mass / f_mass))
 print(f"Change of velocity is {c_velo:.1f} m/s") #This prints the change in velocity
