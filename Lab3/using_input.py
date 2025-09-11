@@ -8,29 +8,29 @@
 # Date: 05 09 2025
 import math
 print("This program calculates the Reynolds number given velocity, length, and viscosity")
-print("Please enter the velocity (m/s): 9")
+print("Please enter the velocity (m/s): ")
 velo = int(input()) #This takes in the velocity
-print("Please enter the length (m): 0.875")
+print("Please enter the length (m): ")
 lin = float(input()) #This takes in the length
-print("Please enter the viscosity (m^2/s): 0.0015")
+print("Please enter the viscosity (m^2/s): ")
 visc = float(input()) #This takes in the viscosity
 rey_num = int((velo * lin) / visc)
 print("Reynolds number is", rey_num) #This prints the Reynolds number
 print()
 print("This program calculates the wavelength given distance and angle")
-print("Please enter the distance (nm): 0.025")
+print("Please enter the distance (nm): ")
 thickness = float(input()) #This takes in the distance
-print("Please enter the angle (degrees): 35")
+print("Please enter the angle (degrees): ")
 angle = int(input()) #This takes in the angle
 wave_len = float(2 * thickness * math.sin((angle*math.pi)/180))
 print(f"Wavelength is {wave_len:.4f} nm") #This prints the wavelength
 print()
 print("This program calculates the production rate given time, initial rate, and decline rate")
-print("Please enter the time (days): 10")
+print("Please enter the time (days): ")
 time = int(input()) #This takes in the time
-print("Please enter the initial rate (barrels/day): 100")
+print("Please enter the initial rate (barrels/day): ")
 i_rate = int(input()) #This takes in the initial rate
-print("Please enter the decline rate (1/day): 2")
+print("Please enter the decline rate (1/day): ")
 d_rate = int(input()) #This takes in the decline rate
 constant = 0.8
 p_rate = float(i_rate / ((1 + constant * d_rate * time) ** (1 / constant)))
