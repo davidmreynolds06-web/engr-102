@@ -17,14 +17,14 @@ print("This program calculates the wavelength given distance and angle")
 thickness = float(input("Please enter the distance (nm): ")) #This takes in the distance
 angle = float(input("Please enter the angle (degrees): ")) #This takes in the angle
 wave_len = float(2 * thickness * math.sin((angle*math.pi)/180))
-print(f"Wavelength is {wave_len:.4f} nm") #This prints the wavelength
+print(f"Wavelength is {wave_len:.4f} nm\n") #This prints the wavelength
 print("This program calculates the production rate given time, initial rate, and decline rate")
 time = float(input("Please enter the time (days): ")) #This takes in the time
 i_rate = float(input("Please enter the initial rate (barrels/day): ")) #This takes in the initial rate
 d_rate = float(input("Please enter the decline rate (1/day): ")) #This takes in the decline rate
 constant = 0.8
 p_rate = float(i_rate / ((1 + constant * d_rate * time) ** (1 / constant)))
-print(f"Production rate is {p_rate:.2f} barrels/day") #This prints the barrel per day decay rate
+print(f"Production rate is {p_rate:.2f} barrels/day\n") #This prints the barrel per day decay rate
 print("This program calculates the change of velocity given initial mass, final mass, and exhaust velocity")
 i_mass = float(input("Please enter the initial mass (kg): ")) #This takes in the initial mass
 f_mass = float(input("Please enter the final mass (kg): ")) #This takes in the final mass
