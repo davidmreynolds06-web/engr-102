@@ -12,7 +12,8 @@ velo = float(input("Please enter the velocity (m/s): ")) #This takes in the velo
 lin = float(input("Please enter the length (m): ")) #This takes in the length
 visc = float(input("Please enter the viscosity (m^2/s): ")) #This takes in the viscosity
 rey_num = int((velo * lin) / visc)
-print("Reynolds number is", rey_num,"\n") #This prints the Reynolds number
+print("Reynolds number is", rey_num) #This prints the Reynolds number
+print()
 print("This program calculates the wavelength given distance and angle")
 thickness = float(input("Please enter the distance (nm): ")) #This takes in the distance
 angle = float(input("Please enter the angle (degrees): ")) #This takes in the angle
