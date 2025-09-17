@@ -11,7 +11,9 @@ print("This program calculates the Reynolds number given velocity, length, and v
 velo = float(input("Please enter the velocity (m/s): ")) #This takes in the velocity
 lin = float(input("Please enter the length (m): ")) #This takes in the length
 visc = float(input("Please enter the viscosity (m^2/s): ")) #This takes in the viscosity
-rey_num = int((velo * lin) / visc)
+
+rey_num = int(((velo * lin) / visc) + 0.5) #This calculates the Reynolds number
+
 print("Reynolds number is", rey_num) #This prints the Reynolds number
 print()
 print("This program calculates the wavelength given distance and angle")
@@ -25,7 +27,9 @@ i_rate = float(input("Please enter the initial rate (barrels/day): ")) #This tak
 d_rate = float(input("Please enter the decline rate (1/day): ")) #This takes in the decline rate
 constant = 0.8
 p_rate = float(i_rate / ((1 + constant * d_rate * time) ** (1 / constant)))
+
 print(f"Production rate is {p_rate:.2f} barrels/day\n") #This prints the barrel per day decay rate
+
 print("This program calculates the change of velocity given initial mass, final mass, and exhaust velocity")
 i_mass = float(input("Please enter the initial mass (kg): ")) #This takes in the initial mass
 f_mass = float(input("Please enter the final mass (kg): ")) #This takes in the final mass
