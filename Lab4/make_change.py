@@ -1,3 +1,16 @@
+# By submitting this assignment, I agree to the following:
+# "Aggies do not lie, cheat, or steal, or tolerate those who do."
+# "I have not given or received any unauthorized aid on this assignment."
+#
+# Names: 
+# Blake Hammond
+# David Reynolds
+# Hunter Gilbert
+# David Schug
+# Section: 412/512
+# Assignment: Lab Topic #4
+# Date: 12 September 2025
+
 # Make Change
 
 # Take input for payment and output cost and change
