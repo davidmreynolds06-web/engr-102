@@ -41,7 +41,7 @@ print(f"a or b or c: {bool_one_true}")
 XOR = (a_bool or b_bool) and not(a_bool and b_bool)
 bool_XOR = bool(XOR)
 print(f"XOR: {bool_XOR}")
-even = not ((a_bool and b_bool and not(c_bool)) or (a_bool and c_bool and not(b_bool)) or (b_bool and c_bool and not(a_bool)))
+even = not (a_bool and b_bool and not(c_bool) or a_bool and c_bool and not(b_bool) or b_bool and c_bool and not(a_bool) or not(a_bool) and not(b_bool) and not(c_bool))
 print("Odd number:", even)
 
 ############ Part D ############ 
