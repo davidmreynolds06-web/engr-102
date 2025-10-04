@@ -1,3 +1,11 @@
+# By submitting this assignment, I agree to the following:
+# "Aggies do not lie, cheat, or steal, or tolerate those who do."
+# "I have not given or received any unauthorized aid on this assignment."
+#
+# Name: David Reynolds
+# Section: ENGR 102
+# Assignment: Lab1 Topic 6
+# Date: 03 10 2025
 import math
 
 n = int(input("Enter a value for n: "))
@@ -15,6 +23,7 @@ for j in range(1, n + 1):
 
 n3 = sum/105
 
+# Find the balancing number.
 while n2 != sum:
     n0 += 1
     n2 += n0
@@ -24,6 +33,6 @@ while n2 != sum:
 n4 = n2/105
 
 if n3 == n4:
-    print(f"{n} is a co-balancing number with r = {count}")
+    print(f"{n} is a co-balancing number with r={count}")
 else:
     print(f"{n} is not a co-balancing number")
