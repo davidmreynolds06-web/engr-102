@@ -24,7 +24,7 @@ for num in second_half:
 if left_sum == right_sum:
     print("Left:", first_half)
     print("Right:", second_half)
-    print("Both sum to:", left_sum)
+    print("Both sum to", left_sum)
 else: 
     print("Cannot split evenly")
 # Split list
