@@ -19,5 +19,5 @@ while num != 6174 and count < 7:
     count += 1
 print(num, end="")
 
-print(f"\n{n} reaches 6174 via Kaprekar's routine in {count} steps.")
+print(f"\n{n} reaches 6174 via Kaprekar's routine in {count} iterations.")
 # Kaprekar's constant
