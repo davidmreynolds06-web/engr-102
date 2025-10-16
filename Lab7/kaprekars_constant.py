@@ -12,7 +12,7 @@ count = 0
 
 while num != 6174 and count < 7:
     print(f"{num} >", end=" ")
-    num_str = str(n).zfill(4)
+    num_str = str(num).zfill(4)
     asc_digits = ''.join(sorted(num_str))
     desc_digits = asc_digits[::-1]
     num = int(desc_digits) - int(asc_digits)
