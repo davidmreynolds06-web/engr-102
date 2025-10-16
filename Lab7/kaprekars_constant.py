@@ -10,7 +10,7 @@ n = int(input("Enter a four-digit integer: "))
 num = n
 count = 0
 
-while num != 6174 and count < 7:
+while num != 6174 and count < 7 and num != 0:
     print(f"{num} >", end=" ")
     num_str = str(num).zfill(4)
     asc_digits = ''.join(sorted(num_str))
