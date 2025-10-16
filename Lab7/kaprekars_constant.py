@@ -7,16 +7,17 @@
 # Assignment: Lab Topic 7
 # Date: 15 10 2025
 n = int(input("Enter a four-digit integer: "))
+num = n
 count = 0
 
-while n != 6174 and count < 7:
-    print(f"{n} >", end=" ")
+while num != 6174 and count < 7:
+    print(f"{num} >", end=" ")
     num_str = str(n).zfill(4)
     asc_digits = ''.join(sorted(num_str))
     desc_digits = asc_digits[::-1]
-    n = int(desc_digits) - int(asc_digits)
+    num = int(desc_digits) - int(asc_digits)
     count += 1
-print(n, end="")
+print(num, end="")
 
-print(f"\nKaprekar's constant reached in {count} steps.")
+print(f"\n{n} reaches 6174 via Kaprekar's routine in {count} steps.")
 # Kaprekar's constant
