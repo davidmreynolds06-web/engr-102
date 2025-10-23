@@ -1,54 +1,31 @@
 #include <stdio.h>
 
 int main() {
-    
- #define PIN 6457
- #define INITIAL_BALANCE 5000
- int entered_pin, choice;
- float balance = INITIAL_BALANCE;
-
-    printf("Enter your PIN: ");
-    scanf("%d", &entered_pin);
-
-    if (entered_pin != PIN) {
-        printf("Invalid PIN. Access denied.\n");
-        return 1;
-    }
-    else {
-        printf("\n1. Withdraw\n");
-        printf("2. Deposit\n");
-        printf("3. Quit\n");
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
-				printf("You selected: %d", choice);
-        while (choice != 3) {
-			if (choice == 1) {
-                float amount;
-                printf("Enter amount to withdraw: ");
-                scanf("%f", &amount);
-                if (amount > balance) {
-                printf("Insufficient funds. Transaction cancelled.\n");
-            } else {
-                printf("$Amount to withdraw: $%.2f\n", amount);
-                balance -= amount;
-                printf("Withdrawal successful. New balance: $%.2f\n", balance);
-            }
-			} else if (choice == 2) {
-                float amount;
-                printf("Enter amount to deposit: ");
-                scanf("%f", &amount);
-				printf("$Amount to deposit: $%.2f\n", amount);
-                balance += amount;
-                printf("Deposit successful. New balance: $%.2f\n", balance);
-			} else {
-                printf("Invalid choice. Please try again.\n");
-            }
-			printf("Enter your choice: ");
-			scanf("%d", &choice);
-			printf("You selected: %d", choice);
-        } printf("Thank you for using the ATM. Goodbye!\n");
-        
-    }
-
-  return 0;
+    float r1, r2, r3, r4, area1, area2, area3, area4, sphere1, sphere2, sphere3, sphere4;
+    printf("Enter radius 1: ");
+    scanf("%f", &r1);
+    printf("You entered: %.2f\n", r1);
+    printf("Enter radius 2: ");
+    scanf("%f", &r2);
+    printf("You entered: %.2f\n", r2);
+    printf("Enter radius 3: ");
+    scanf("%f", &r3);
+    printf("You entered: %.2f\n", r3);
+    printf("Enter radius 4: ");
+    scanf("%f", &r4);
+    printf("You entered: %.2f\n", r4);
+    area1 = 3.14 * r1 * r1;
+    area2 = 3.14 * r2 * r2; 
+    area3 = 3.14 * r3 * r3;
+    area4 = 3.14 * r4 * r4;
+    sphere1 = (4.0/3.0) * 3.14 * r1 * r1 * r1;
+    sphere2 = (4.0/3.0) * 3.14 * r2 * r2 * r2;
+    sphere3 = (4.0/3.0) * 3.14 * r3 * r3 * r3;
+    sphere4 = (4.0/3.0) * 3.14 * r4 * r4 * r4;
+    printf("Results:\n");
+    printf("Radius %.2f:\n\tSphere volume: %.2f\n\tCircle area: %.2f\n", r1, sphere1, area1);
+    printf("Radius %.2f:\n\tSphere volume: %.2f\n\tCircle area: %.2f\n", r2, sphere2, area2);
+    printf("Radius %.2f:\n\tSphere volume: %.2f\n\tCircle area: %.2f\n", r3, sphere3, area3);
+    printf("Radius %.2f:\n\tSphere volume: %.2f\n\tCircle area: %.2f\n", r4, sphere4, area4);
+    return 0;
 }
