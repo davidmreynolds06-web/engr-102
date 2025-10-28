@@ -1,31 +1,33 @@
 #include <stdio.h>
 
-int main() {
-    float r1, r2, r3, r4, area1, area2, area3, area4, sphere1, sphere2, sphere3, sphere4;
-    printf("Enter radius 1: ");
-    scanf("%f", &r1);
-    printf("You entered: %.2f\n", r1);
-    printf("Enter radius 2: ");
-    scanf("%f", &r2);
-    printf("You entered: %.2f\n", r2);
-    printf("Enter radius 3: ");
-    scanf("%f", &r3);
-    printf("You entered: %.2f\n", r3);
-    printf("Enter radius 4: ");
-    scanf("%f", &r4);
-    printf("You entered: %.2f\n", r4);
-    area1 = 3.14 * r1 * r1;
-    area2 = 3.14 * r2 * r2; 
-    area3 = 3.14 * r3 * r3;
-    area4 = 3.14 * r4 * r4;
-    sphere1 = (4.0/3.0) * 3.14 * r1 * r1 * r1;
-    sphere2 = (4.0/3.0) * 3.14 * r2 * r2 * r2;
-    sphere3 = (4.0/3.0) * 3.14 * r3 * r3 * r3;
-    sphere4 = (4.0/3.0) * 3.14 * r4 * r4 * r4;
-    printf("Results:\n");
-    printf("Radius %.2f:\n\tSphere volume: %.2f\n\tCircle area: %.2f\n", r1, sphere1, area1);
-    printf("Radius %.2f:\n\tSphere volume: %.2f\n\tCircle area: %.2f\n", r2, sphere2, area2);
-    printf("Radius %.2f:\n\tSphere volume: %.2f\n\tCircle area: %.2f\n", r3, sphere3, area3);
-    printf("Radius %.2f:\n\tSphere volume: %.2f\n\tCircle area: %.2f\n", r4, sphere4, area4);
-    return 0;
+ // Example code structure
+ float getRadius() {
+ // Prompt user for radius and return the value
+ printf("Enter radius: ");
+ float radius;
+ scanf("%f", &radius);
+ printf("You entered radius: %.2f\n", radius);
+ return radius;
+ }
+ float calculate(float radius, int choice) {
+ // Calculate and return the result based on the user's choice
+    float result = 0.0;
+    if (choice == 1) {
+        result = 3.14159 * radius * radius * radius * (4.0 / 3.0); // Volume of sphere
+    }
+    else if (choice == 2) {
+        result = radius * radius * 3.14159; // Area of circle
+    }
+    return result;
+ }
+ int main() {
+ // Use the getRadius and calculate functions to get input and perform calculations
+ float radius = getRadius();
+ int choice;
+ printf("Enter your choice (1 for sphere volume, 2 for circle area): ");
+ scanf("%d", &choice);
+ float result = calculate(radius, choice);
+ printf("Result: %.2f\n", result);
+ return 0;
 }
+// Print the result based on the user's choice
