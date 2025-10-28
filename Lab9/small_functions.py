@@ -10,7 +10,7 @@
 def parta(nums):
     if not nums:
         raise ValueError("nums must contain at least one number")
-    s = sorted(nums)
+    s = sorted(nums) # make it easier to find min, max, median
     n = len(s)
     min_num = s[0]
     max_num = s[-1]
@@ -24,7 +24,7 @@ def parta(nums):
 def partb(times, dists):
     """Return list of velocities between consecutive time measurements.
     times must be strictly increasing and times and dists must have the same length.
-    """
+    """ # Raise ValueError for invalid inputs.
     if len(times) != len(dists):
         raise ValueError("times and dists must have the same length")
     if len(times) < 2:
@@ -38,7 +38,7 @@ def partb(times, dists):
     return vels
 
 def partc(nums):
-    """Return the product of two numbers in nums that sum to 2029, or False if none exist."""
+    """Return the product of two numbers in nums that sum to 2029, or False if none exist.""" # Raise ValueError for invalid inputs.
     seen = set()
     for num in nums:
         target = 2029 - num
@@ -68,7 +68,7 @@ def parte(radius_sphere, radius_hole):
     """Return volume of the napkin-ring (sphere with a cylindrical hole).
     radius_sphere = R, radius_hole = r. Raises ValueError for invalid inputs.
     Uses V = (pi * h^3) / 6 where h = 2*sqrt(R^2 - r^2).
-    """
+    """ # Raise ValueError for invalid inputs.
     import math
     R = float(radius_sphere)
     r = float(radius_hole)
@@ -80,7 +80,7 @@ def parte(radius_sphere, radius_hole):
     return math.pi * h**3 / 6.0
 
 def partf(border_char, name, company, email):
-    """Return a digital business card string using border_char and 2-space padding."""
+    """Return a digital business card string using border_char and 2-space padding.""" # Raise ValueError for invalid inputs.
     if not border_char:
         raise ValueError("border character must be a non-empty string")
     padding = 2
