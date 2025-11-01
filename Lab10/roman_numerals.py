@@ -35,8 +35,8 @@ int1 = roman_to_int(num1)
 int2 = roman_to_int(num2)
 
 if int1 < int2:
-    print(f"{num1} is smaller than {num2}.")
+    print(f"{num1} is smaller than {num2}")
 elif int1 > int2:
-    print(f"{num1} is larger than {num2}.")
+    print(f"{num1} is larger than {num2}")
 else:
-    print(f"{num1} is equal to {num2}.")
+    print(f"{num1} is equal to {num2}")
