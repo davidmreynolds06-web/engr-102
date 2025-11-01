@@ -27,16 +27,16 @@ def roman_to_int(s):
         prev_value = value
     return total
 
-num1 = input("Enter the first Roman numeral: ")
-num2 = input("Enter the second Roman numeral: ")
+num1 = input("Enter the first Roman numeral: \n")
+num2 = input("Enter the second Roman numeral: \n")
 
 # Convert Roman numerals to integers
 int1 = roman_to_int(num1)
 int2 = roman_to_int(num2)
 
 if int1 < int2:
-    print(f"{num1} is less than {num2}.")
+    print(f"{num1} is smaller than {num2}.")
 elif int1 > int2:
-    print(f"{num1} is greater than {num2}.")
+    print(f"{num1} is larger than {num2}.")
 else:
     print(f"{num1} is equal to {num2}.")
